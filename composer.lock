@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f1bf5676302f1d1cdb2b8c6677e33197",
+    "content-hash": "690e935162426873182c8e854ba60d18",
     "packages": [
         {
             "name": "composer/semver",
@@ -101,16 +101,16 @@
         },
         {
             "name": "davaxi/sparkline",
-            "version": "1.0.5",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/davaxi/Sparkline.git",
-                "reference": "2d403a9d226e3c9eea620167065a8e9b9956561e"
+                "reference": "d563481f0960bac1acb4e24743ab884f4ce251e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davaxi/Sparkline/zipball/2d403a9d226e3c9eea620167065a8e9b9956561e",
-                "reference": "2d403a9d226e3c9eea620167065a8e9b9956561e",
+                "url": "https://api.github.com/repos/davaxi/Sparkline/zipball/d563481f0960bac1acb4e24743ab884f4ce251e2",
+                "reference": "d563481f0960bac1acb4e24743ab884f4ce251e2",
                 "shasum": ""
             },
             "require": {
@@ -154,7 +154,7 @@
                 "picture",
                 "sparkline"
             ],
-            "time": "2017-11-16T09:37:53+00:00"
+            "time": "2017-12-15T15:45:18+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -1027,12 +1027,12 @@
             ],
             "authors": [
                 {
-                    "name": "The Matomo Team",
+                    "name": "The Piwik Team",
                     "email": "hello@piwik.org",
                     "homepage": "http://piwik.org/the-piwik-team/"
                 }
             ],
-            "description": "PHP Client for Matomo Analytics Tracking API",
+            "description": "PHP Client for Piwik Analytics Tracking API",
             "homepage": "http://piwik.org",
             "keywords": [
                 "analytics",
@@ -3016,7 +3016,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "davaxi/sparkline": 20,
         "facebook/xhprof": 20
     },
     "prefer-stable": false,
