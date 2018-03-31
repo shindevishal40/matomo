@@ -65,4 +65,8 @@
     </whitelist>
 </filter>
 
+<listeners>
+    <listener class="TestDurationListener" file="./Framework/TestDurationListener.php" />
+</listeners>
+
 </phpunit>
