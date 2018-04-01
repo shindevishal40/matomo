@@ -34,6 +34,8 @@ class ManySitesImportedLogs extends Fixture
 
     public function setUp()
     {
+        $time = microtime(true);
+
         $this->setUpWebsitesAndGoals();
         self::downloadGeoIpDbs();
 
@@ -45,6 +47,8 @@ class ManySitesImportedLogs extends Fixture
 
         $this->trackVisits();
         $this->setupSegments();
+
+        echo  'Time to set up ManySitesImportedLogs: ' . (microtime(true)-$time) . ' sec';
     }
 
     public function tearDown()
