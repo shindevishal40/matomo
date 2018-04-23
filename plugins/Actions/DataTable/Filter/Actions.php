@@ -47,15 +47,16 @@ class Actions extends BaseFilter
                     $row->setMetadata('segmentValue', urldecode($url));
                 }
 
-                // remove the default action name 'index' in the end of flattened urls
+                // remove the default action name 'index' in the end of flattened urls and prepend $actionDelimiter
                 if (Common::getRequestVar('flat', 0)) {
                     $label = $row->getColumn('label');
                     $stringToSearch = $actionDelimiter.$defaultActionName;
                     if (substr($label, -strlen($stringToSearch)) == $stringToSearch) {
                         $label = substr($label, 0, -strlen($defaultActionName));
                         $label = rtrim($label, $actionDelimiter) . $actionDelimiter;
-                        $row->setColumn('label', $label);
                     }
+                    $label = $actionDelimiter . $label;
+                    $row->setColumn('label', $label);
                     $dataTable->setLabelsHaveChanged();
                 }
             }
